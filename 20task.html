@@ -1,0 +1,944 @@
+<script>
+
+    //1
+    // *****
+    // ****
+    // ***
+    // **
+    // *
+    // a =parseInt(prompt('bcbcbbbc'))
+    // b =a/2
+    // k=0
+    //     for (let i = 1; i <= a; i++) {
+    //         i<=b?k++:k--;
+    //         for (let j = 1; j <= a+1; j++) {
+    //             if (j>=(b+2)-k&&j<=b+k) {
+    //                 document.write("*")
+    //             } else {
+    //                 document.write("0")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+
+
+    // k=0
+    // for (let i = 0; i < 10; i++) {
+    //     i<= 5 ?k++:k--
+    //     for (let j = 0; j <10; j++) {
+    //         if (j <= 4-k || j >= 6+k  ) {
+    //             document.write('*')
+    //         }else{
+    //             document.write('-')
+    //         }
+
+    //     }
+    //     document.write("</br>")
+
+    // }
+
+    // var a =prompt('enter a number')
+    //     for (let i = 0; i < a; i++) {
+    //         for (let j = 0; j < a; j++) {
+    //             if (j < a-i) {
+    //                 document.write("*")
+    //             } else {
+    //                 document.write("0")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+
+    //2
+    // ----o
+    // ---oo
+    // --ooo
+    // -oooo
+    // ooooo
+
+    // for (let i = 0; i <=5; i++) {
+    //     for (let j = 0; j <=5; j++) {
+    //         if (j > 4-i) {
+    //             document.write("*")
+    //         } else {
+    //             document.write("0")
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+
+    //3
+    // 888888888
+    // 8888o8888
+    // 888ooo888
+    // 88ooooo88
+    // 8ooooooo8
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <= 9; j++) {
+    //         if (j <=5-i||j>=5+i) {
+    //             document.write("*")
+    //         } else {
+    //             document.write("0")
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+    //4
+    // 0000*0000
+    // 000***000
+    // 00*****00
+    // 0*******0
+    // *********
+
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <= 9; j++) {
+    //         if (j >= 6 - i && j <= 4 + i) {
+    //             document.write("*")
+    //         } else {
+    //             document.write("0")
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+
+
+    //5
+    //     1
+    //     1 2
+    //     1 2 3
+    //     1 2 3 4
+    //     1 2 3 4 5
+
+    // for (let i = 1; i <=5; i++) {
+    //     var k = 1
+    //     for (let j = 1; j <=i; j++) {
+    //             document.write(k)
+    //             k++
+    //     }
+    //     document.write("</br>")
+    // }
+
+
+    //6
+    //  *****
+    //   ****
+    //    ***
+    //     **
+    //      *
+
+    // for (let i = 0; i <=5; i++) {
+    //     for (let j = 0; j <=5; j++) {
+    //         if (j > i) {
+    //             document.write("*")
+    //         } else {
+    //             document.write("0")
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+
+
+    //            *
+    //          * * *
+    //        * * * * *
+    //      * * * * * * *
+    //    * * * * * * * * *
+
+    // 0000*0000
+    // 000*0*000
+    // 00*0*0*00
+    // 0*0*0*0*0
+    // *0*0*0*0*
+
+
+    // for (let i = 1; i <= 5; i++) {
+    // var k = 1
+    //     for (let j = 1; j <= 9; j++) {
+    //         if (j >= 6 - i && j <= 4 + i&&k ) {
+    //             document.write("*")
+    //             k = 0
+    //         } else {
+    //             document.write("0")
+    //             k = 1
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+
+
+
+
+
+
+    //     for (let i = 1; i <= 4; i++) {
+    //     var k = 1
+    //     for (let j = 1; j <= 7; j++) {
+    //         if (j >= 5 - i && j <= 3 + i ) {
+    //             document.write(k)
+    //             j<4 ? k++:k--;
+    //         } else {
+    //             document.write("0")
+
+    //         }
+
+    //     }
+    //     document.write("</br>")
+    // }
+
+
+
+
+    // *******
+    // 0*000*0
+    // 00*0*00
+    // 000*000
+
+    // for (let i = 1; i <= 4; i++) {
+    //         for (let j = 1; j <= 7; j++) {
+    //             if (i==1||j==i||j==8-i) {
+    //                 document.write('*')
+    //             } else {
+    //                 document.write("0")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+
+    // A
+    // AB
+    // ABC
+    // ABCD
+    // ABC
+    // AB
+    // A
+
+    // var k = 0
+
+    // for (let i = 1; i <= 7; i++) {
+    //     i <= 4 ? k++ : k--
+    //     for (let j = 1; j <= 4; j++) {
+    //         var a = String.fromCharCode(j + 64)
+    //         if (j <= k) {
+    //             document.write(a)
+
+    //         } else {
+    //             document.write('&nbsp;&nbsp;')
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+
+
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+    // ******
+    // *****
+    // ****
+    // ***
+    // **
+    // *
+
+    // var a = prompt('odd enter a number')
+    // var k = 0
+    // var x = (a / 2) + 1
+    // for (let i = 1; i <= a; i++) {
+    //     i <= x ? k++ : k--
+    //     for (let j = 1; j <= x; j++) {
+    //         if (j <= k) {
+    //             document.write('*')
+    //         } else {
+    //             document.write("&nbsp;&nbsp")
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+
+    // *              *
+    //   *          *
+    //     *      *
+    //       *  *
+    //         *
+    //       *  *
+    //     *      *
+    //   *          *
+    // *              *
+
+
+    //         var a = prompt('odd enter a number')
+    //     for (let i = 1; i <= a; i++) {
+    //         for (let j = 1; j <= a - 1; j++) {
+    //             if (j == i || j == a - i) {
+    //                 document.write("*")
+    //             } else {
+    //                 document.write("&nbsp&nbsp")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+
+
+    //       *
+    //       *
+    //       *
+    //       *
+    //       *
+    //   **********
+    //       *
+    //       *
+    //       *
+    //       *
+
+    //     var a = prompt('odd enter a number')
+    // var x = (a / 2) + 1
+    // for (let i = 1; i <= a; i++) {
+    //     for (let j = 1; j <= a; j++) {
+    //         if (j == x || i == x) {
+    //             document.write("*")
+    //         } else {
+    //             document.write("&nbsp&nbsp")
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+
+
+    //     ********
+    // *            *
+    // *            *
+    // *            *
+    // *            *
+    // *            *
+    // *            *
+    // ********
+
+    //         var a = prompt('odd enter a number')
+    //     // var x = (a / 2) + 1
+    //     for (let i = 1; i <= a; i++) {
+    //         for (let j = 1; j <= a; j++) {
+    //             if (j == 1 || i == 1 || j == a || i == a) {
+    //                 document.write("*")
+    //             } else {
+    //                 document.write("&nbsp&nbsp")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+
+    // *****
+    // *###*
+    // *###*
+    // *###*
+    // *****
+
+
+    //         var a = prompt('odd enter a number')
+    //     // var x = (a / 2) + 1
+    //     for (let i = 1; i <= a; i++) {
+    //         for (let j = 1; j <= a; j++) {
+    //             if (j == 1 || i == 1 || j == a || i == a) {
+    //                 document.write("*")
+    //             } else {
+    //                 document.write("#")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+    //   *******
+    // **      **
+    // *  *  *  *
+    // *    *   *
+    // *  *  *  *
+    // **      **
+    //   *******
+
+    //     var a = parseInt(prompt('odd enter a number'))
+    //     var x = a + 1
+    //     for (let i = 1; i <= a; i++) {
+    //         for (let j = 1; j <= a; j++) {
+    //             if (j == 1 || i == 1 || j == a || i == a || j == i || j == x - i) {
+    //                 document.write("*")
+    //             } else {
+    //                 document.write("&nbsp&nbsp")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+    // *
+    // **
+    // *  *
+    // *    *
+    // *      *
+    // *        *
+    // *          *
+    // ********
+
+    // var a = parseInt(prompt('odd enter a number'))
+    // var x = a + 1
+    // for (let i = 1; i <= a; i++) {
+    //     for (let j = 1; j <= a; j++) {
+    //         if (j == a || i == a||j==x-i) {
+    //             document.write("x")
+    //         } else {
+    //             document.write("&nbsp&nbsp")
+    //         }
+    //     }
+    //     document.write("</br>")
+    // }
+
+
+    //       1
+    //     2   2
+    //   3       3
+    // 4           4
+
+    //     var a = parseInt(prompt('odd enter a number'))
+    //             // var x = a + 1
+    //             // var y = a/2
+    //             for (let i = 1; i <= a; i++) {
+    //                 for (let j = 1; j <= a*2; j++) {
+    //                     if (j == (a-1)+i ||j==(a+1)-i) {
+    //                         document.write(i)
+    //                     } else {
+    //                         document.write("&nbsp&nbsp")
+    //                     }
+    //                 }
+    //                 document.write("</br>")
+    //             }
+
+
+
+    // 0000*00000
+    // 000***0000
+    // 00*****000
+    // 0*******00
+    // *********0
+    // 0*******00
+    // 00*****000
+    // 000***0000
+    // 0000*00000
+    // 0000000000
+
+    // a =parseInt(prompt('bcbcbbbc'))
+    // b =a/2
+    // k=0
+    //     for (let i = 1; i <= a; i++) {
+    //         i<=b?k++:k--;
+    //         for (let j = 1; j <= a+1; j++) {
+    //             if (j>=(b+2)-k&&j<=b+k) {
+    //                 document.write("*")
+    //             } else {
+    //                 document.write("0")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+
+
+
+    //     var a = parseInt(prompt('odd enter a number'))
+    //             var x = (a /2)+1
+    //             var y = (a /2)-1
+    //             k=0
+    //             for (let i = 1; i <=a ; i++) {
+    //                 i<=a/2?k++:k--
+    //                 for (let j = 1; j <= a; j++) {
+    //                     if (j <=y+k && j>=x-k) {
+    //                         document.write('*')
+    //                     } else {
+    //                         document.write("0")
+    //                     }
+    //                 }
+    //                 document.write("</br>")
+    //             }
+
+
+    // var a = parseInt(prompt('odd enter a number'))
+    //         var x = (a /2)+1
+    //         var y = (a /2)-1
+
+
+
+    //        11
+    //     22
+    //   33
+    // 44
+    //   55
+    //     66
+    //       77
+
+    //     var k= 0
+    //     for (let i = 1; i <= 7; i++) {
+    //         i<=4?k++:k--
+    //         for (let j = 1; j <= 5; j++) {
+    //            // if (j==5-k ||j==6-k)
+    //             if (j+k==5 ||j+k==6)
+    //              {
+    //                 document.write(i)
+    //             } else {
+    //                 document.write("&nbsp&nbsp")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+
+
+
+
+    //var k= 0
+
+
+
+    // *00000000*
+    // **000000**
+    // ***0000***
+    // ****00****
+    // ***0000***
+    // **000000**
+    // *00000000*
+    // var k=0
+    //     for (let i = 1; i <= 7; i++) {
+    //         i<=4?k++:k--
+    //         for (let j = 1; j <= 10; j++) {
+    //             if (j<=k||j>10-k){
+    //                 document.write('*')
+    //             } else {
+    //                 document.write("0")
+    //             }
+    //         }
+    //         document.write("</br>")
+    //     }
+    // *****
+    // &****
+    // &&***
+    // &&&**
+    // &&&&*
+    // &&&**
+    // &&***
+    // &****
+    // *****
+
+
+
+    //      var k =0
+    //     for (let i = 1; i <= 9; i++) {
+    //         i<=5?k++:k--
+    //         for (let j = 1; j <= 5; j++) {
+    //             if (j >= k) {
+    //                 document.write('*')
+    //             } else {
+    //                 document.write('&')
+    //             }
+    //         }
+    //         document.write('</br>')
+    //     }
+
+
+
+    // oooo*ooooo*oooo
+    // ooo***ooo***ooo
+    // oo*****o*****oo
+    // o*************o
+    // ***************
+
+
+
+
+
+
+
+    // // var k =0
+    // for (let i = 1; i <= 5; i++) {
+    //    // i<=5?k++:k--
+    //     for (let j = 1; j <= 18; j++) {
+    //         if ((j>=6-i&&j<=4+i )|| (j>=13-i&&j<=11+i)) {
+    //             document.write('*')
+    //         } else {
+    //             document.write('0')
+    //         }
+    //     }
+    //     document.write('</br>')
+    // }
+
+
+    //
+    //         for (let i = 1; i <= 5; i++) {
+    //             for (let j = 1; j <=15; j++) {
+    //                 if ((j>=6-i&&j<=4+i)||(j>=12-i&&j<=10+i)) {
+    //                     document.write('*')
+    //                 } else {
+    //                     document.write('o')
+    //                 }
+    //             }
+    //             document.write('</br>')
+    //         }
+
+    //       *
+    //     *
+    //   *
+    // * * * * * * *
+    //   *
+    //     *
+    //       *
+
+    // var k =0
+    // for (let i = 1; i <= 7; i++) {
+    //     i<=4?k++:k--
+    //     for (let j = 1; j <= 7; j++) {
+    //         if (j==4|| i==j+3) {
+    //             document.write('*&nbsp')
+    //         } else {
+    //             document.write('&nbsp&nbsp')
+    //         }
+    //     }
+    //     document.write('</br>')
+    // }
+
+
+    // var k =0
+    //     for (let i = 1; i <= 7; i++) {
+    //         i<=4?k++:k--
+    //         for (let j = 1; j <= 7; j++) {
+    //             if (i==4||j+k==5) {
+    //                 document.write('*&nbsp')
+    //             } else {
+    //                 document.write('&nbsp&nbsp')
+    //             }
+    //         }
+    //         document.write('</br>')
+    //     }
+
+    // 0000* 00
+    // 00000* 0
+    // 000000*
+    // * * * * * * *
+    // 000000*
+    // 00000* 0
+    // 0000* 00
+
+    // var k =0
+    //     for (let i = 1; i <= 7; i++) {
+    //         i<=4?k++:k--
+    //         for (let j = 1; j <= 7; j++) {
+    //             if (i==4||j==4+k) {
+    //                 document.write('*&nbsp')
+    //             } else {
+    //                 document.write('0')
+    //             }
+    //         }
+    //         document.write('</br>')
+    //     }
+
+    // *********
+    // &*&&&&&*&
+    // &&*&&&*&&
+    // &&&*&*&&&
+    // &&&&*&&&&
+    //     var k = 0
+    //     for (let i = 1; i <= 5; i++) {
+    //         i <= 5 ? k++ : k--
+    //         for (let j = 1; j <= 9; j++) {
+    //             if (i == 1||j==k ||j==10-i) {
+    //                 document.write('*')
+    //             } else {
+    //                 document.write('&')
+    //             }
+    //         }
+    //         document.write('</br>')
+    //     }
+
+    // *           *
+    //   *       * *
+    //     *   * * *
+    //       * * * *
+    //     * * * * *
+    //   * * * * * *
+    // * * * * * * *
+    //     var k = 0
+    //     for (let i = 1; i <= 7; i++) {
+    //         i <= 5 ? k++ : k--
+    //         for (let j = 1; j <= 7; j++) {
+    //             if (j>=8-i||j==i) {
+    //                 document.write('*')
+    //             } else {
+    //                 document.write('&nbsp&nbsp')
+    //             }
+    //         }
+    //         document.write('</br>')
+    //     }
+
+    // var k = 0
+    // for (let i = 1; i <= 9; i++) {
+    //     i <= 5 ? k++ : k--
+    //     for (let j = 1; j <= 9; j++) {
+    //         if (j==6-k||j==k+4) {
+    //             document.write('*')
+    //         } else {
+    //             document.write('&nbsp&nbsp')
+    //         }
+    //     }
+    //     document.write('</br>')
+    // }
+
+
+
+
+    // *00****
+    // *00*000
+    // *00*000
+    // *******
+    // 000*00*
+    // 000*00*
+    // ****00*
+
+    // var k = 0
+    // for (let i = 1; i <= 7; i++) {
+    //     // i <= 5 ? k++ : k--
+    //     for (let j = 1; j <= 7; j++) {
+    //         if (i == 4 || j == 4 || (j == 1 && i <= 4) || (j >= 4 && i == 1) || (j <= 4 && i == 7) || (j == 7 && i >= 4)) {
+    //             document.write('*')
+    //         } else {
+    //             document.write('&nbsp&nbsp')
+    //         }
+    //     }
+    //     document.write('</br>')
+    // }
+
+
+
+    // * * * *
+    // * * * *
+    // *******
+    // *     *
+    // *     *
+    // *     *
+    // *******
+
+
+
+
+
+
+    //             var k = 0
+    //         for (let i = 1; i <= 7; i++) {
+    //             // i <= 5 ? k++ : k--
+    //             for (let j = 1; j <= 7; j++) {
+    //                 if (i == 7 || j == 7 || j == 1 || i==3 || (j==3&&i<=3) || (j==5&&i<=3)) {
+    //                     document.write('*')
+    //                 } else {
+    //                     document.write('&')
+    //                 }
+    //             }
+    //             document.write('</br>')
+    //         }
+
+
+
+    // 0000*0000
+    // 000***000
+    // 00*0*0*00
+    // 0*00*00*0
+    // *********
+    // 0*00*00*0
+    // 00*0*0*00
+    // 000***000
+    // 0000*0000
+
+    //   var k =0
+    //         for (let i = 1; i <= 9; i++) {
+    //         i<=5?k++:k--
+    //             for (let j = 1; j <= 9; j++) {
+    //                 if (i==5||j==5|| j+k==6 || j-k==4) {
+    //                     document.write('*')
+    //                 } else {
+    //                     document.write('0')
+    //                 }
+    //             }
+    //             document.write('</br>')
+    //         }
+
+    // *********
+    // *         *
+    // *  *****  *
+    // *  *   *  *
+    // *  * * *  *
+    // *  *   *  *
+    // *  *****  *
+    // *         *
+    // *********
+
+
+    // for (let i = 1; i <= 9; i++) {
+    //     for (let j = 1; j <= 9; j++) {
+    //         if (i == 9 || j == 9 || j == 1 || i == 1 || (i == 3 && j >= 3 && j <= 7) || (i == 7 && j >= 3 && j <= 7) || (j == 3 && i >= 3 && i <= 7) || (j == 7 && i >= 3 && i <= 7) || (j == 5 && i == 5)) {
+    //             document.write('*')
+    //         } else {
+    //             document.write('&nbsp&nbsp')
+    //         }
+    //     }
+    //     document.write('</br>')
+    // }
+
+
+
+
+    //   var k =0
+    //         for (let i = 1; i <= 7; i++) {
+    //         i<=5?k++:k--
+    //             for (let j = 1; j <= 7; j++) {
+    //                 if (j==4  || 3+j==) {
+    //                     document.write('*')
+    //                 } else {
+    //                 }
+    //             }
+    //             document.write('</br>')
+    //         }
+
+
+
+
+
+
+
+    //  *             *
+    //   *     *     *
+    //   *     *     *
+    //   *     *     *
+    //     * * * * *
+    //         *
+    //         *
+    //         *
+    //         *
+
+
+    // var k = 0
+    // for (let i = 1; i <= 8; i++) {
+    //     i <= 5 ? k++ : k--
+    //     for (let j = 1; j <= 9; j++) {
+    //         if ((j == 5 && i >= 2) || (j == 2 && i >= 2 && i <= 4) || (i == 5 && j >= 3 && j <= 7) || (j == 8 && i >= 2 && i <= 4) || (i == 1 && j == 1) || (i == 1 && j == 9)) {
+    //             document.write('*')
+    //         } else {
+    //             document.write('&nbsp&nbsp')
+    //         }
+    //     }
+    //     document.write('</br>')
+    // }
+
+
+
+
+
+
+
+    //            *
+    //          * * *                 *
+    //        * * * * *             * *
+    //      * * * * * * *         * * *
+    //    * * * * * * * * *     * * * *
+    //  * * * * * * * * * * * * * * * *
+    //    * * * * * * * * *     * * * *
+    //      * * * * * * *         * * *
+    //        * * * * *             * *
+    //          * * *                 *
+    //            *
+
+
+
+    var k = 0
+    for (let i = 0; i < 11; i++) {
+        i <=  5? k++ : k--
+        for (let j = 0; j < 16; j++) {
+
+            if (j>=5-k && j<=5+k || j>=16-k) {
+                document.write('*')
+            } else {
+                document.write('&nbsp&nbsp')
+            }
+        }
+        document.write('<br>')
+
+    }
+
+
+
+
+    // var k = 0
+    // for (let i = 1; i <= 11; i++) {
+    //     i <= 6 ? k++ : k--
+    //     for (let j = 1; j <= 16; j++) {
+    //         if ((j >= 7 - k && j <= 5 + k) || (j >= 18 - k)) {
+    //             document.write('*&nbsp')
+    //         } else {
+    //             document.write('&nbsp&nbsp&nbsp')
+    //             //document.write('0')
+    //         }
+    //     }
+    //     document.write('</br>')
+    // }
+
+
+
+    // _ _ _ _ _ _ _ * _ _ _ _ _ _ _
+    // _ _ _ _ _ _ * _ * _ _ _ _ _ _
+    // * * * * * * * * * * * * * * *
+    // _ * _ _ * * _ _ _ * * _ _ * _
+    // _ _ * * _ _ * _ * _ _ * * _ _
+    // _ _ * * * * * * * * * * * _ _
+    // _ * _ _ * _ * _ * _ * _ _ * _
+    // * * * * * * * * * * * * * * *
+    // _ _ _ _ _ _ * _ * _ _ _ _ _ _
+    // _ _ _ _ _ _ _ * _ _ _ _ _ _
+
+    // var a = 1
+    // var k = 0
+    // for (let i = 1; i <= 11; i++) {
+    //     i <= 4 ? k++ : k--;
+
+    //     for (let j = 1; j <= 17; j++) {
+    //         if (j == 10 - i || j == 8 + i || (i == 9 && a == 1) || (i == 3 && a) || 2 + j == i || i == 20 - j || (i == 6 && j <= 15 && (j >= 4 && a))) {
+    //             document.write("*")
+    //             a = 0
+    //         } else {
+    //             document.write('&nbsp&nbsp')
+    //             a = 1
+    //         }
+    //     }
+    //     document.write('</br>')
+    // }
+
+
+
+
+
+    // A
+    // AB
+    // ABC
+    // ABCD
+    // ABC
+    // AB
+    // A
+
+    // var k=0
+    //     for (let i = 1; i <=7; i++) {
+    //         i<=4?k++:k--;
+    //         for (let j = 1; j <=4; j++) {
+    //           var aa=  String.fromCharCode(64+j)
+    //             if (j<=k) {
+    //                 document.write(aa)
+    //             } else {
+    //                 document.write('&nbsp&nbsp')
+    //             }
+    //          }
+    //          document.write('</br>')
+    //     }
+
+
+
+
+
+
+
+
+</script>
