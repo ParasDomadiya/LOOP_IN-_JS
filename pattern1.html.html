@@ -1,0 +1,16 @@
+<script>
+    for (var i = 0; i < 13; i++) {
+        for (var j = 0; j < 19; j++) {
+            if (i + j == 9 || j - i == 9 || i == 9 && j % 2 == 0 || i - j == 3 || i == 3 && j % 2 == 0 || i + j == 21 ||
+                (i + j == 15 && (i < 9 && i > 3)) || (j - i == 3 && (i < 9 && i > 3)) || i == 6 && (j > 2 && j < 16)) {
+                document.write('*')
+            }
+            else {
+                document.write('&nbsp;&nbsp')
+            }
+
+        }
+
+        document.write('<br/>')
+    }
+</script>

@@ -1,0 +1,42 @@
+<script>
+    var a = parseInt(prompt('Enter a value'));
+    var b = (2*a);
+    var c = parseInt(a/2);
+    var d = parseInt(b/6);
+    var e = parseInt(d/2);
+    var f = parseInt(e/2);
+    var g = parseInt(f/3);
+    
+    
+    
+    for(i=0; i<a; i++){
+        for(j=0; j<b; j++){
+                //    /           \                          |
+            if((i+j == d) || (i-j == 2*d) || (j==0 && i+j >= d && i-j <= 2*d)
+    
+            //           ___                             ___
+            || (i==0 && i+j >= d && j<=a) || (i==a-1 && i-j <= 2*d  && j<=a) 
+    
+            //      /           \        |               
+            ||  i+j ==b-1 || j-i==a || j==b-1 
+            
+            // //             /                            \                               |    
+            || ((i+j == b-f) && (i<c-g))  || (j-i == a+1-f && i>c+g) || (j==b-f && i>=f && i<a-f) 
+            
+            //               / eye                             \ eye
+            || (i+j == 2*d && i<c && i>=d) || (i==j && i<c && i>=d)
+    
+            //          eye \                                  eye /
+            || (i-j == d-1 && i>=c && i<=a-1-d) || (i+j == a-1 && i>=c && i<a-1-d)  ){
+            document.write("* ")
+            }
+            else{
+                    document.write('_ ')
+                }
+        } 
+        document.write('<br/>')
+    }
+    
+    
+    </script>
+    
